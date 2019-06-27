@@ -1,0 +1,15 @@
+<!-- si quisiera manda un avariable del componente se pondria [titulo] ="alertPage" donde alertPage es la varible del componente pero si solo enviamos un string sepone asi-->
+<app-header [titulo]="titulo || 'Alert Page'">
+</app-header>
+<ion-content>
+
+
+    <ion-button expand="full" color="primary" (click)="presentAlert()">
+        Mostrar alerta
+    </ion-button>
+
+    <ion-button expand="full" color="primary" (click)="presentAlertPrompt()">
+        Mostrar input
+    </ion-button>
+
+</ion-content>

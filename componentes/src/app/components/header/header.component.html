@@ -1,0 +1,14 @@
+<ion-header no-border translucent>
+    <!-- translucent para que cuando baje el scrool se vea transparente-->
+    <ion-toolbar>
+        <!--slot="start" al inicio  o "end" al final -->
+        <ion-buttons slot="start">
+            <!-- bton de atras nativo  aparece en el toolbar -->
+            <ion-back-button color="primary" defaultHref="/" text="BACK"></ion-back-button>
+            <!--defaultHref="/" se utiliza para redireccionar en este caso iria al home -->
+
+        </ion-buttons>
+
+        <ion-title text-center text-capitalize>{{titulo}}</ion-title>
+    </ion-toolbar>
+</ion-header>

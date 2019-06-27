@@ -1,0 +1,49 @@
+<app-header titulo="Grid Row"></app-header>
+
+<ion-content padding fullscreen>
+
+
+
+    <ion-grid fixed>
+        <!-- fixed pone un margen a los lados-->
+        <ion-row>
+            <ion-col>
+                Hola
+            </ion-col>
+            <ion-col>
+                Hola
+            </ion-col>
+            <ion-col>
+                Hola
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col *ngFor="let c of [1,2,3,5,6,7,8,9,0,1,2]; let i = index">
+                Hola {{ i + 1}}
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="12" size-lg="3" size-md="4" size-sm="6" size-xs="12" *ngFor="let c of [1,2,3,5,6,7,8,9,0,1,2]; let i = index">
+                <!-- como bootstrap  size define los col y el tamaño que barque  a 12 el tamaño mas grande-->
+                <ion-card>
+                    <ion-img src="/assets/shapes.svg"></ion-img>
+                    <ion-card-header>
+                        <ion-card-subtitle>
+                            Card subtitle
+                        </ion-card-subtitle>
+                        <ion-card-title>
+                            Car Title
+                        </ion-card-title>
+                        <ion-card-content>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id et unde, enim delectus dignissimos cumque placeat natus fuga iusto quae maxime! Consequuntur earum veniam exercitationem fugiat quis labore rerum in!
+                        </ion-card-content>
+                    </ion-card-header>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+
+
+
+</ion-content>
